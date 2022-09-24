@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Creating Object Using Constructor</title>
+    <script>
+        let mycar = new Object();
+        mycar['compony'] = "Maruti";
+        mycar["name"] = "Baleno";
+        mycar["year"] = 2014;
+        mycar["Reg no"] = "MP15654367";
+
+
+        document.write("My First Car:<br>");
+
+        document.write(`Compony: ${mycar.compony}<br>`);
+        document.write(`Name: ${mycar.name}<br>`);
+        document.write(`Year: ${mycar.year} <br>`);
+        document.write(`Reg no: ${mycar["Reg no"]}<br><br>`);
+
+        mycar['compony'] = "Manindra";
+        mycar["name"] = "Fortuner";
+        mycar["year"] = 2022;
+        mycar["Reg no"] = "MP1566654657";
+
+        document.write("I sold My first Car and bought second Car:<br> ");
+
+        document.write(`Compony: ${mycar.compony}<br>`);
+        document.write(`Name: ${mycar.name}<br>`);
+        document.write(`Year: ${mycar.year} <br>`);
+        document.write(`Reg no: ${mycar["Reg no"]}<br>`);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

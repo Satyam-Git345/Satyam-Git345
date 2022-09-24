@@ -1,0 +1,48 @@
+<head>
+    <title>
+        Home Page
+    </title>
+    <style>
+        a {
+            font-family: fantasy
+        }
+    </style>
+
+    <script>
+        var a = 10;
+
+        function f1() {
+            var a = 20;
+            satyam = 30;
+            document.write(`In f1 a is: ${a}<br>`);
+            document.write(`In f1 global a is: ${window.a}<br>`);
+        }
+
+        function f2() {
+            var a = 30;
+            document.write(`In f2 a is: ${a}<br>`);
+            document.write(`In f2 global a is: ${window.a}<br>`);
+        }
+
+        function grettings() {
+
+            document.write("Good Morning.....<br>");
+            document.write(`Satyam as a Globel Variable: ${satyam}`);
+        }
+    </script>
+</head>
+
+<body>
+    To call f1<a href="javascript:f1()">Click</a>here
+    <br>
+    <br> To call f2<a href="javascript:f2()">Click</a>here
+    <br>
+    <br> To call grettings<a href="javascript:grettings()">Click</a>here
+    <!-- <script>
+        f1();
+        f2();
+        grettings();
+    </script> -->
+</body>
+
+</html>

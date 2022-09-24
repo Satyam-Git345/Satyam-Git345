@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Function demo</title>
+    <script>
+        let mycar = new Object();
+        mycar['model'] = "Honda";
+        mycar['reg no'] = "MP1576543GGOIY";
+        mycar['year'] = 2015;
+
+        mycar['showdetails'] = function() {
+            document.write(mycar.model + "," + mycar['reg no'] + "," + mycar.year);
+
+        };
+
+        mycar['Individualdetails'] = function() {
+            document.write(`Model: ${mycar.model}<br>Reg no: ${mycar['reg no']}<br>Year: ${mycar.year}`);
+        };
+        mycar.showdetails();
+        mycar.Individualdetails();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

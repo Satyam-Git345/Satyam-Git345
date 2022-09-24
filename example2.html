@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example1</title>
+    <script type="text/javascript">
+         function getCube(){
+            var number=document.getElementById("number").value;
+            document.write(`Number is: `+number);
+            document.write(`<br>`)
+            var cube=(number*number*number);
+            document.write("Cube of a number is: "+cube);
+         }
+    </script>
+</head>
+<body>
+    Enter Number: <input type="text"  placeholder="Enter Integer" id="number"><br>
+    <input type="submit" onfocus="getCube()">
+</body>
+</html>

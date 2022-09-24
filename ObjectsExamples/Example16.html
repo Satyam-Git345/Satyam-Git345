@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <script>
+        let mycar = {
+            Compony: "TATA",
+            Name: "Fortuner",
+            Number: "MP15H675497",
+            Model: "K453",
+            Year: 2014,
+
+            printAll: function(msg) {
+                console.log(msg);
+                console.log(mycar.Compony + "," + mycar.Name + "," + mycar.Number + "," + mycar.Model + "," + mycar.Year);
+            }
+
+        };
+
+
+        mycar.printAll("Following are details of Mycar: ");
+        for (x in mycar) {
+            document.write(`${mycar[x]}<br>`);
+        }
+    </script>
+</head>
+
+<body>
+
+    object Example18

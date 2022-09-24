@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>
+        Home Page
+    </title>
+
+    <script>
+        function grettings() {
+            let sum = 0;
+            document.write(`Function called with: ${arguments.length} arguments<br>`);
+            for (let arg of arguments) {
+                document.write(typeof arg + "<br>");
+
+                sum += Number(arg);
+            }
+            document.write(`Sum= ${sum}<br>`);
+            document.write(`Average= ${sum/arguments.length}<br>`);
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        //grettings("Naman", "Satyam", "Dhoni", "Kholi");
+        grettings(1, 2, 3, 4, 5, 889, );
+        //grettings("Satyam");
+        //grettings();
+    </script>
+</body>
+
+</html>

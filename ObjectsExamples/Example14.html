@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>
+        Creating objects using Object litural
+    </title>
+    <script>
+        let mycar = {
+            Compony: "TATA",
+            Name: "Fortuner",
+            Number: "MP15H675497",
+            Model: "K453",
+            Year: 2014,
+
+            PrintAll: function() {
+                console.log("Car has Started......");
+            },
+
+            Satyam: function() {
+                console.log("Good Evening Satyam......");
+            },
+            Owner: "Satyam Shukla"
+        };
+
+        for (var key in mycar) {
+            document.write(`${mycar[key]}<br>`);
+
+        }
+        console.log(mycar);
+        mycar.PrintAll();
+        mycar.Satyam();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

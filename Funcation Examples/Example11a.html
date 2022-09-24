@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Function Demo</title>
+
+    <script type="text/javascript">
+        function showMassage() {
+            console.log(new Date);
+        }
+
+        function Start() {
+            a = setInterval(showMassage, 1000);
+        }
+
+        function Stop() {
+            clearInterval(a);
+            console.log("Stoped!!!");
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Start" onclick="Start()">
+    <input type="button" value="Stop" onclick="Stop()">
+</body>
+
+</html>

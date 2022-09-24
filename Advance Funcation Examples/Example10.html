@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Another Way Arrow Funcation </title>
+    <script>
+        var ar = 0;
+
+        function area(radius, show) {
+            ar = 3.14 * (radius * radius);
+            setTimeout(show, 4000);
+        }
+
+        function display() {
+            document.write(`Area of circle is ${ar}`);
+        }
+        area(5, display);
+        document.write("Hi");
+    </script>
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>

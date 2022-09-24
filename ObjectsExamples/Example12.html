@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Function demo</title>
+    <script>
+        let mycar = new Object();
+        mycar['model'] = "Honda";
+        mycar['reg no'] = "MP1576543GGOIY";
+        mycar['year'] = 2015;
+
+        mycar.showdetails = function() {
+            document.write(mycar.model + "," + mycar['reg no'] + "," + mycar.year);
+
+        };
+
+        mycar.PrintMassage = function() {
+            document.write("Good Evening Satyam.......");
+
+        }
+
+
+        mycar.showdetails();
+        mycar.PrintMassage();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

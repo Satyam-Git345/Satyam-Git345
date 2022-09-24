@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>
+        Home Page
+    </title>
+
+    <script>
+        function grettings() {
+            alert(`Function called with: ${arguments.length} arguments`);
+            for (let arg of arguments) {
+                document.write(`${arg}<br>`);
+            }
+            for (let arg in arguments) {
+                document.write(`${arg}<br>`);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        //grettings("Naman", "Satyam", "Dhoni", "Kholi");
+        grettings(22, 44, 67, 54, 23, 87, 99, 45, 76);
+        //grettings("Satyam");
+        //grettings();
+    </script>
+</body>
+
+</html>
